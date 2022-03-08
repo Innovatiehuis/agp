@@ -308,13 +308,7 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: calc(100vh - 70px);
- 
-  background-size: cover;
-  position: relative;
-  margin-top: 70px;
-  padding: 0;
+
 }
 #hero:before {
   content: "";
