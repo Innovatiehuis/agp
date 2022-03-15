@@ -1219,6 +1219,9 @@ section {
   color: #fff;
   line-height: 1;
   text-align: center;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
   width: 36px;
   height: 36px;
   transition: 0.3s;
