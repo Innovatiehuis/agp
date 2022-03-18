@@ -14,8 +14,8 @@ $('.purpose-radio-input').on('change', function(e) {
     $('#business-type').text(e.target.value);
 });
 
-$('#firstName').on('change', function(e) {
-    $('#enteredFirstName').text(e.target.value || 'Cha');
+$('#NaamIdee').on('change', function(e) {
+    $('#ingevoerdeNaam').text(e.target.value || 'Cha');
 });
 
 $('#lastName').on('change', function(e) {
@@ -29,4 +29,3 @@ $('#phoneNumber').on('change', function(e) {
 $('#emailAddress').on('change', function(e) {
     $('#enteredEmailAddress').text(e.target.value || 'willms_abby@gmail.com');
 });
-
