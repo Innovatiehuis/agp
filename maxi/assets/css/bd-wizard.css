@@ -141,10 +141,11 @@ main {
       .wizard .content .purpose-radios-wrapper .purpose-radio:last-child {
         margin-right: 0; }
   .wizard .content .form-control {
-    padding: 30px 25px;
+    padding: 0px 0px;
     min-height: 50px;
     max-width: 550px;
     border-radius: 4px;
+    margin:  auto;
     border: solid 1px #ececec; }
     .wizard .content .form-control::-webkit-input-placeholder {
       color: #919aa3; }
