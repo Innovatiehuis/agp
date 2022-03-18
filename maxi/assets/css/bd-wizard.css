@@ -31,7 +31,7 @@ main {
   width: 50%;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding: 0px 0px; }
+  padding: 10px; }
   .wizard .steps > ul {
     list-style: none;
     padding-left: 0;
@@ -141,7 +141,7 @@ main {
       .wizard .content .purpose-radios-wrapper .purpose-radio:last-child {
         margin-right: 0; }
   .wizard .content .form-control {
-    padding: 0px 0px;
+    padding: 30px 25px;
     min-height: 50px;
     max-width: 550px;
     border-radius: 16px;
