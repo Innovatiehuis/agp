@@ -141,7 +141,7 @@ main {
       .wizard .content .purpose-radios-wrapper .purpose-radio:last-child {
         margin-right: 0; }
   .wizard .content .form-control {
-    padding: 26px 25px;
+    padding: 30px 25px;
     min-height: 50px;
     max-width: 550px;
     border-radius: 4px;
