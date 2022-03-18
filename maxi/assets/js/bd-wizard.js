@@ -18,14 +18,14 @@ $('#NaamIdee').on('change', function(e) {
     $('#ingevoerdeNaam').text(e.target.value || 'Cha');
 });
 
-$('#lastName').on('change', function(e) {
-    $('#enteredLastName').text(e.target.value || 'Ji-Hun C');
+$('#OntstaanIdee').on('change', function(e) {
+    $('#ingevoerdeIdee').text(e.target.value || 'Ji-Hun C');
 });
 
-$('#phoneNumber').on('change', function(e) {
-    $('#enteredPhoneNumber').text(e.target.value || '+230-582-6609');
+$('#doelgroep').on('change', function(e) {
+    $('#ingevoerdedoelgroep').text(e.target.value || '+230-582-6609');
 });
 
-$('#emailAddress').on('change', function(e) {
-    $('#enteredEmailAddress').text(e.target.value || 'willms_abby@gmail.com');
+$('#Doel').on('change', function(e) {
+    $('#ingevoerdeDoel').text(e.target.value || 'willms_abby@gmail.com');
 });
