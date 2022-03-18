@@ -27,8 +27,11 @@ main {
   border: 0; }
 
 .wizard .steps {
+  margin: auto;
+  width: 50%;
   padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  padding: 10px; }
   .wizard .steps > ul {
     list-style: none;
     padding-left: 0;
