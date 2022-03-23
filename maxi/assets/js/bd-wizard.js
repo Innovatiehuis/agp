@@ -32,7 +32,7 @@ $('#Doel').on('change', function(e) {
 
 
 
-$(function () {
+$(function (e) {
   $('#emailLink').on('click', function (event) {
       event.preventDefault();
     alert("Je bericht wordt verstuurd");
