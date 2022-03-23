@@ -38,10 +38,10 @@ $(function (e) {
     alert("Je bericht wordt verstuurd");
     var email = 'innovatiehuis.noord-nederland@politie.nl';
     var subject = $('#ingevoerdeNaam');
-    var emailBody1 = $('#business-type').text(e.target.value);
-    var emailBody2 = $('#ingevoerdeIdee').text(e.target.value || 'Ji-Hun C');
-    var emailBody3 = $('#ingevoerdedoelgroep').text(e.target.value || '+230-582-6609');
-    var emailBody4 = $('#ingevoerdeDoel').text(e.target.value || 'willms_abby@gmail.com');
+    var emailBody1 = $('#business-type');
+    var emailBody2 = $('#ingevoerdeIdee');
+    var emailBody3 = $('#ingevoerdedoelgroep');
+    var emailBody4 = $('#ingevoerdeDoel');
     window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
   });
 });
