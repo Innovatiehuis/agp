@@ -30,27 +30,21 @@ $('#Doel').on('change', function(e) {
     $('#ingevoerdeDoel').text(e.target.value || 'willms_abby@gmail.com');
 });
 
+var subject = $('#ingevoerdeNaam').text(e.target.value || 'Cha');
+
+var emailBody1 = $('#business-type').text(e.target.value);
+
+var emailBody2 = $('#ingevoerdeIdee').text(e.target.value || 'Ji-Hun C');
+
+var emailBody3 = $('#ingevoerdedoelgroep').text(e.target.value || '+230-582-6609');
+
+var emailBody4 = $('#ingevoerdeDoel').text(e.target.value || 'willms_abby@gmail.com');
 
 $(function () {
   $('#emailLink').on('click', function (event) {
       event.preventDefault();
     alert("Je bericht wordt verstuurd");
     var email = 'innovatiehuis.noord-nederland@politie.nl';
-    var subject = $('#NaamIdee').on('change', function(e) {
-    $('#ingevoerdeNaam').text(e.target.value || 'Cha');
-});
-    var emailBody1 = $('.purpose-radio-input').on('change', function(e) {
-    $('#business-type').text(e.target.value);
-});
-    var emailBody2 = ($('#OntstaanIdee').on('change', function(e) {
-    $('#ingevoerdeIdee').text(e.target.value || 'Ji-Hun C');
-}));
-    var emailBody3 = $('#doelgroep').on('change', function(e) {
-    $('#ingevoerdedoelgroep').text(e.target.value || '+230-582-6609');
-});
-    var emailBody4 = $('#Doel').on('change', function(e) {
-    $('#ingevoerdeDoel').text(e.target.value || 'willms_abby@gmail.com');
-});
-    window.location = 'mailto:' + email + '?subject=' + JSON.stringify(subject) + '&body=' +   JSON.stringify(emailBody1) + JSON.stringify(emailBody2) + JSON.stringify(emailBody3) + JSON.stringify(emailBody4);
+    window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody1 + emailBody2 + emailBody3 + emailBody4;
   });
 });
