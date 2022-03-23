@@ -42,6 +42,7 @@ $(function (e) {
     var emailBody2 = $('#ingevoerdeIdee').prop('innerHTML');
     var emailBody3 = $('#ingevoerdedoelgroep').prop('innerHTML');
     var emailBody4 = $('#ingevoerdeDoel').prop('innerHTML');
-    window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
+    $('#emailLink').prop('href') = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
+    // window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
   });
 });
