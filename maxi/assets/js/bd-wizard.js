@@ -41,9 +41,9 @@ $(function () {
     var emailBody1 = $('.purpose-radio-input').on('change', function(e) {
     $('#business-type').text(e.target.value);
 });
-    var emailBody2 = $('#OntstaanIdee').on('change', function(e) {
+    var emailBody2 = JSON.stringify($('#OntstaanIdee').on('change', function(e) {
     $('#ingevoerdeIdee').text(e.target.value || 'Ji-Hun C');
-});
+}));
     var emailBody3 = $('#doelgroep').on('change', function(e) {
     $('#ingevoerdedoelgroep').text(e.target.value || '+230-582-6609');
 });
