@@ -37,11 +37,11 @@ $(function (e) {
       event.preventDefault();
     alert("Je bericht wordt verstuurd");
     var email = 'innovatiehuis.noord-nederland@politie.nl';
-    var subject = $('#ingevoerdeNaam');
-    var emailBody1 = $('#business-type');
-    var emailBody2 = $('#ingevoerdeIdee');
-    var emailBody3 = $('#ingevoerdedoelgroep');
-    var emailBody4 = $('#ingevoerdeDoel');
+    var subject = $('#ingevoerdeNaam').innerHTML;
+    var emailBody1 = $('#business-type').innerHTML;
+    var emailBody2 = $('#ingevoerdeIdee').innerHTML;
+    var emailBody3 = $('#ingevoerdedoelgroep').innerHTML;
+    var emailBody4 = $('#ingevoerdeDoel').innerHTML;
     window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
   });
 });
