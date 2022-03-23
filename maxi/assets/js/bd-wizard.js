@@ -51,6 +51,6 @@ $(function () {
     var emailBody4 = $('#Doel').on('change', function(e) {
     $('#ingevoerdeDoel').text(e.target.value || 'willms_abby@gmail.com');
 });
-    window.location = 'mailto:' + email + '?subject=' + JSON.stringify.subject + '&body=' +   JSON.stringify.emailBody1 + JSON.stringify.emailBody2 + JSON.stringify.emailBody3 + JSON.stringify.emailBody4;
+    window.location = 'mailto:' + email + '?subject=' + JSON.stringify(subject) + '&body=' +   JSON.stringify(emailBody1) + JSON.stringify(emailBody2) + JSON.stringify(emailBody3) + JSON.stringify(emailBody4);
   });
 });
