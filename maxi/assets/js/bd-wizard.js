@@ -42,7 +42,7 @@ $(function () {
     var emailBody1 = $('.purpose-radio-input').on('change', function(e) {
     $('#business-type').text(e.target.value);
 });
-    var emailBody2 = JSON.stringify($('#OntstaanIdee').on('change', function(e) {
+    var emailBody2 = ($('#OntstaanIdee').on('change', function(e) {
     $('#ingevoerdeIdee').text(e.target.value || 'Ji-Hun C');
 }));
     var emailBody3 = $('#doelgroep').on('change', function(e) {
@@ -51,6 +51,6 @@ $(function () {
     var emailBody4 = $('#Doel').on('change', function(e) {
     $('#ingevoerdeDoel').text(e.target.value || 'willms_abby@gmail.com');
 });
-    window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody1 + emailBody2 + emailBody3 + emailBody4;
+    window.location = 'mailto:' + email + '?subject=' + JSON.stringify.subject + '&body=' +   JSON.stringify.emailBody1 + JSON.stringify.emailBody2 + JSON.stringify.emailBody3 + JSON.stringify.emailBody4;
   });
 });
