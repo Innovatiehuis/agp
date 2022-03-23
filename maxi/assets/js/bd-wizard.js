@@ -33,10 +33,13 @@ $('#Doel').on('change', function(e) {
 $(function () {
   $('#emailLink').on('click', function (event) {
       event.preventDefault();
-    alert("Huh");
-    var email = 'test@theearth.com';
-    var subject = 'Circle Around';
-    var emailBody = 'Some blah';
-    window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+    alert("Je bericht wordt verstuurd");
+    var email = 'innovatiehuis.noord-nederland@politie.nl';
+    var subject = $('#ingevoerdeNaam').text(e.target.value);
+    var emailBody1 = $('#business-type').text(e.target.value);
+    var emailBody2 = $('#ingevoerdeIdee').text(e.target.value);
+    var emailBody3 = $('#ingevoerdedoelgroep').text(e.target.value);
+    var emailBody4 = $('#ingevoerdeDoel').text(e.target.value);
+    window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody1 + emailBody2 + emailBody3 + emailBody4;
   });
 });
