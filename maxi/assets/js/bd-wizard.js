@@ -31,7 +31,7 @@ $('#Doel').on('change', function(e) {
 });
 
 $(function () {
-  $('#emailLink').on('click', function (event) {
+  $('#finish').on('click', function (event) {
       event.preventDefault();
     alert("Je bericht wordt verstuurd");
     var email = 'innovatiehuis.noord-nederland@politie.nl';
