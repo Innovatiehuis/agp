@@ -19,7 +19,6 @@ $('#NaamIdee').on('change', function(e) {
 });
 
 
-
 $('#OntstaanIdee').on('change', function(e) {
     $('#ingevoerdeIdee').text(e.target.value || 'Ji-Hun C');
 });
@@ -42,7 +41,7 @@ $(function (e) {
     var email = 'innovatiehuis.noord-nederland@politie.nl';
     var subject = $('#ingevoerdeNaam').innerText;
     var emailBody1 = $('#business-type')['innerText'];
-    var emailBody2 = $('#ingevoerdeIdee').innerHTML;
+    var emailBody2 = $('#ingevoerdeIdee').text['data'];
     var emailBody3 = $('#ingevoerdedoelgroep').innerHTML;
     var emailBody4 = $('#ingevoerdeDoel').innerHTML;
     window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
