@@ -30,6 +30,15 @@ $('#Doel').on('change', function(e) {
     $('#ingevoerdeDoel').text(e.target.value || 'willms_abby@gmail.com');
 });
 
+$('#finish').on('change', function(e){
+    $(function () {
+        alert("Je bericht wordt in outlook gezet");
+        var email = 'innovatiehuis.noord-nederland@politie.nl'
+        window.location = 'mailto:' + email;
+    });
+
+});
+
 $(function () {
   $('#finish').on('click', function (event) {
       event.preventDefault();
