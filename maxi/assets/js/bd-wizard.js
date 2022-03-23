@@ -37,7 +37,7 @@ $(function (e) {
   $('#emailLink').on('click', function (event) {
       event.preventDefault();
     alert("Je bericht wordt verstuurd");
-    console.log($('#ingevoerdeNaam'));
+    console.log('HENK');
     var email = 'innovatiehuis.noord-nederland@politie.nl';
     var subject = $('#ingevoerdeNaam').prop('innerHTML');
     var emailBody1 = $('#business-type')['innerText'];
