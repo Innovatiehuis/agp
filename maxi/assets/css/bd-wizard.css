@@ -36,8 +36,8 @@ main {
     display: flex;
     -webkit-box-pack: justify;
             justify-content: space-between;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#7b7f89), to(#7b7f89));
-    background-image: linear-gradient(#7b7f89, #7b7f89);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#26336E), to(#26336E));
+    background-image: linear-gradient(#454545, #454545);
     background-size: calc(100% - 50px) 4px;
     background-repeat: no-repeat;
     background-position: center; }
@@ -49,12 +49,12 @@ main {
       height: 50px;
       border: 2px solid #fff;
       border-radius: 50%;
-      background-color: #7b7f89;
+      background-color: #26336E;
       text-align: center;
       line-height: 50px;
       color: #fff; }
     .wizard .steps > ul li.current span.number, .wizard .steps > ul li.done span.number {
-      background-color: #00d69f; }
+      background-color: #30ae73; }
 
 .wizard .content {
   margin-bottom: 45px; }
@@ -63,7 +63,7 @@ main {
   .wizard .content .bd-wizard-step-title {
     font-size: 20px;
     font-weight: bold;
-    color: #7b7f89;
+    color: #343536;
     margin-bottom: 45px; }
   .wizard .content .section-heading {
     font-size: 35px;
@@ -80,15 +80,15 @@ main {
       position: absolute;
       opacity: 0; }
       .wizard .content .purpose-radio .purpose-radio-input:checked + .purpose-radio-label {
-        border-color: #00d69f; }
+        border-color: #30ae73; }
         .wizard .content .purpose-radio .purpose-radio-input:checked + .purpose-radio-label .label-icon {
-          color: #00d69f; }
+          color: #30ae73; }
           .wizard .content .purpose-radio .purpose-radio-input:checked + .purpose-radio-label .label-icon .label-icon-default {
             display: none; }
           .wizard .content .purpose-radio .purpose-radio-input:checked + .purpose-radio-label .label-icon .label-icon-active {
             display: inline-block; }
         .wizard .content .purpose-radio .purpose-radio-input:checked + .purpose-radio-label .label-text {
-          color: #00d69f;
+          color: #30ae73;
           font-weight: bold; }
     .wizard .content .purpose-radio .purpose-radio-label {
       display: -webkit-box;
@@ -96,7 +96,7 @@ main {
       width: 196px;
       height: 184px;
       max-width: 100%;
-      border: 2px solid #7b7f89;
+      border: 2px solid #26336E;
       border-radius: 4px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -144,15 +144,15 @@ main {
     border-radius: 8px;
     border: solid 1px #ececec; }
     .wizard .content .form-control::-webkit-input-placeholder {
-      color: #919aa3; }
+      color: #454545; }
     .wizard .content .form-control::-moz-placeholder {
-      color: #919aa3; }
+      color: #454545; }
     .wizard .content .form-control:-ms-input-placeholder {
-      color: #919aa3; }
+      color: #454545; }
     .wizard .content .form-control::-ms-input-placeholder {
-      color: #919aa3; }
+      color: #454545; }
     .wizard .content .form-control::placeholder {
-      color: #919aa3; }
+      color: #454545; }
 
 .wizard .actions > ul {
   list-style: none;
@@ -163,7 +163,7 @@ main {
 .wizard .actions li a {
   display: inline-block;
   border-radius: 6px;
-  background-color: #00d69f;
+  background-color:#30ae73;
   padding: 16px 30px;
   color: #fff;
   font-style: 15px;
