@@ -144,15 +144,15 @@ main {
     border-radius: 8px;
     border: solid 1px #ececec; }
     .wizard .content .form-control::-webkit-input-placeholder {
-      color: #26336E; }
+      color: #454545; }
     .wizard .content .form-control::-moz-placeholder {
-      color: #26336E; }
+      color: #454545; }
     .wizard .content .form-control:-ms-input-placeholder {
-      color: #26336E; }
+      color: #454545; }
     .wizard .content .form-control::-ms-input-placeholder {
-      color: #26336E; }
+      color: #454545; }
     .wizard .content .form-control::placeholder {
-      color: #26336E; }
+      color: #454545; }
 
 .wizard .actions > ul {
   list-style: none;
