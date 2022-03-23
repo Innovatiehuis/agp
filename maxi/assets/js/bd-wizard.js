@@ -18,6 +18,8 @@ $('#NaamIdee').on('change', function(e) {
     $('#ingevoerdeNaam').text(e.target.value || 'Cha');
 });
 
+
+
 $('#OntstaanIdee').on('change', function(e) {
     $('#ingevoerdeIdee').text(e.target.value || 'Ji-Hun C');
 });
@@ -36,6 +38,7 @@ $(function (e) {
   $('#emailLink').on('click', function (event) {
       event.preventDefault();
     alert("Je bericht wordt verstuurd");
+    console.log($('#ingevoerdeNaam'));
     var email = 'innovatiehuis.noord-nederland@politie.nl';
     var subject = $('#ingevoerdeNaam').innerHTML;
     var emailBody1 = $('#business-type').innerHTML;
