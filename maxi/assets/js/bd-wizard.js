@@ -35,7 +35,7 @@ $('#Doel').on('change', function(e) {
 
 $(function (e) {
   $('#emailLink').on('click', function (event) {
-      event.preventDefault();
+//      event.preventDefault();
     var email = 'innovatiehuis.noord-nederland@politie.nl';
     var subject = $('#ingevoerdeNaam').prop('innerHTML');
     var emailBody1 = $('#business-type').prop('innerHTML');
