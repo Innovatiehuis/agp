@@ -40,10 +40,10 @@ $(function (e) {
     console.log('HENK');
     var email = 'innovatiehuis.noord-nederland@politie.nl';
     var subject = $('#ingevoerdeNaam').prop('innerHTML');
-    var emailBody1 = $('#business-type')['innerText'];
-    var emailBody2 = $('#ingevoerdeIdee').text['data'];
-    var emailBody3 = $('#ingevoerdedoelgroep').innerHTML;
-    var emailBody4 = $('#ingevoerdeDoel').innerHTML;
+    var emailBody1 = $('#business-type').prop('innerHTML');
+    var emailBody2 = $('#ingevoerdeIdee').prop('innerHTML');
+    var emailBody3 = $('#ingevoerdedoelgroep').prop('innerHTML');
+    var emailBody4 = $('#ingevoerdeDoel').prop('innerHTML');
     window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
   });
 });
