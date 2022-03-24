@@ -15,10 +15,24 @@ let values = {
     ingevoerdeIdee: '',
     ingevoerdedoelgroep: '',
     doel: '',
+    business_type: '',
 }
 
 $('.purpose-radio-input').on('change', function(e) {
+    let mailString = '';
     $('#business-type').text(e.target.value);
+    values['business_type'] = e.target.value;
+    for (const [key, value] of Object.entries(values)) {
+        if(key == 'email'){
+            mailString += 'mailto:' + values['email'] + '?'
+        }
+        else if(key == 'subject'){
+            mailString += 'subject=' + value + '&body=';
+        } else {
+            mailString += value + '\n';
+        }
+    }
+    $('#emailLink').attr('href', mailString);
 });
 
 $('#NaamIdee').on('change', function(e) {
@@ -32,7 +46,7 @@ $('#NaamIdee').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += value;
+            mailString += value + '\n';
         }
     }
     $('#emailLink').attr('href', mailString);
@@ -52,7 +66,7 @@ $('#OntstaanIdee').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += value;
+            mailString += value + '\n';
         }
     }
 
@@ -70,7 +84,7 @@ $('#doelgroep').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += value;
+            mailString += value + '\n';
         }
     }
     $('#emailLink').attr('href', mailString);
@@ -87,16 +101,14 @@ $('#Doel').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += value;
+            mailString += value + '\n';
         }
     }
     $('#emailLink').attr('href', mailString);
 });
 
 
-
-
-console.log(4)
+console.log(5)
 
 //  $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
 
