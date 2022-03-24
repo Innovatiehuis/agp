@@ -96,7 +96,7 @@ $('#Doel').on('change', function(e) {
 
 
 
-console.log(2)
+console.log(3)
 
 //  $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
 
