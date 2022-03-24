@@ -10,37 +10,37 @@ $("#wizard").steps({
 
 //Form control
 
-var emailBody1 = $('.purpose-radio-input').on('change', function(e) {
+$('.purpose-radio-input').on('change', function(e) {
     $('#business-type').text(e.target.value);
 });
 
-$('#subject') = $('#NaamIdee').on('change', function(e) {
+$('#NaamIdee').on('change', function(e) {
     $('#ingevoerdeNaam').text(e.target.value || 'Cha');
 });
 
 
-var emailBody2 = $('#OntstaanIdee').on('change', function(e) {
+$('#OntstaanIdee').on('change', function(e) {
     $('#ingevoerdeIdee').text(e.target.value || 'Ji-Hun C');
 });
 
-var emailBody3 = $('#doelgroep').on('change', function(e) {
+$('#doelgroep').on('change', function(e) {
     $('#ingevoerdedoelgroep').text(e.target.value || '+230-582-6609');
 });
 
-var emailBody4 = $('#Doel').on('change', function(e) {
+$('#Doel').on('change', function(e) {
     $('#ingevoerdeDoel').text(e.target.value || 'willms_abby@gmail.com');
 });
 
 var email = 'innovatiehuis.noord-nederland@politie.nl';
-//     var subject = $('#ingevoerdeNaam').prop('innerHTML');
-//     var emailBody1 = $('#business-type').prop('innerHTML');
-//     var emailBody2 = $('#OntstaanIdee').on('change', function(e) {$('#ingevoerdeIdee').prop('innerHTML'); });
-//     var emailBody3 = $('#doelgroep').on('change', function(e) {$('#ingevoerdedoelgroep').prop('innerHTML'); });
-//     var emailBody4 = $('#Doel').on('change', function(e) {$('#ingevoerdeDoel').prop('innerHTML'); });
+var subject = $('#ingevoerdeNaam').prop('innerText');
+var emailBody1 = $('#business-type').prop('innerText');
+var emailBody2 = $('#OntstaanIdee').prop('innerText');
+var emailBody3 = $('#doelgroep').prop('innerText');
+var emailBody4 = $('#Doel').prop('innerText');
 
 
 
- $('#emailLink', e).attr('href', 'mailto:' + email + '?subject=' + $('#subject').prop('innerHTML') + '&body=' + emailBody1.prop('innerHTML') + emailBody2.prop('innerHTML') + emailBody3.prop('innerHTML') + emailBody4.prop('innerHTML'));
+ $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
 
 
 // $(function (e) {
