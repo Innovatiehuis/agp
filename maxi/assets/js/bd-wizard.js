@@ -29,7 +29,7 @@ $('#NaamIdee').on('change', function(e) {
         if(key == 'email'){
             mailString += 'mailto:' + values['email'] + '?'
         }
-        if(key == 'subject'){
+        else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
             mailString += value;
@@ -49,7 +49,7 @@ $('#OntstaanIdee').on('change', function(e) {
         if(key == 'email'){
             mailString += 'mailto:' + values['email'] + '?'
         }
-        if(key == 'subject'){
+        else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
             mailString += value;
@@ -67,7 +67,7 @@ $('#doelgroep').on('change', function(e) {
         if(key == 'email'){
             mailString += 'mailto:' + values['email'] + '?'
         }
-        if(key == 'subject'){
+        else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
             mailString += value;
@@ -84,7 +84,7 @@ $('#Doel').on('change', function(e) {
         if(key == 'email'){
             mailString += 'mailto:' + values['email'] + '?'
         }
-        if(key == 'subject'){
+        else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
             mailString += value;
@@ -96,7 +96,7 @@ $('#Doel').on('change', function(e) {
 
 
 
-console.log(3)
+console.log(4)
 
 //  $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
 
