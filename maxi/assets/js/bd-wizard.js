@@ -23,16 +23,18 @@ $('.purpose-radio-input').on('change', function(e) {
 });
 
 $('#NaamIdee').on('change', function(e) {
-    let mailString = 'mailto:' + values['email'] + '?';
+    let mailString = '';
     $('#ingevoerdeNaam').text(e.target.value);
     values['subject'] = e.target.value;
     for (const [key, value] of Object.entries(values)) {
-        if (key != values['email'])
-            if(key == 'subject'){
-                mailString += 'subject=' + value + '&body=';
-            } else {
-                mailString += value;
-            }
+        if(key == 'email'){
+            mailString += 'mailto:' + values['email'] + '?'
+        }
+        if(key == 'subject'){
+            mailString += 'subject=' + value + '&body=';
+        } else {
+            mailString += value;
+        }
     }
     $('#emailLink').attr('href', mailString);
 });
@@ -40,45 +42,51 @@ $('#NaamIdee').on('change', function(e) {
 
 $('#OntstaanIdee').on('change', function(e) {
     $('#ingevoerdeIdee').text(e.target.value);
-    let mailString = 'mailto:' + values['email'] + '?';
+    let mailString = '';
     values['ingevoerdeIdee'] = e.target.value;
     for (const [key, value] of Object.entries(values)) {
-        if (key != values['email'])
-            if(key == 'subject'){
-                mailString += 'subject=' + value + '&body=';
-            } else {
-                mailString += value;
-            }
+        if(key == 'email'){
+            mailString += 'mailto:' + values['email'] + '?'
+        }
+        if(key == 'subject'){
+            mailString += 'subject=' + value + '&body=';
+        } else {
+            mailString += value;
+        }
     }
     $('#emailLink').attr('href', mailString);
 });
 
 $('#doelgroep').on('change', function(e) {
     $('#ingevoerdedoelgroep').text(e.target.value);
-    let mailString = 'mailto:' + values['email'] + '?';
+    let mailString = '';
     values['ingevoerdedoelgroep'] = e.target.value;
     for (const [key, value] of Object.entries(values)) {
-        if (key != values['email'])
-            if(key == 'subject'){
-                mailString += 'subject=' + value + '&body=';
-            } else {
-                mailString += value;
-            }
+        if(key == 'email'){
+            mailString += 'mailto:' + values['email'] + '?'
+        }
+        if(key == 'subject'){
+            mailString += 'subject=' + value + '&body=';
+        } else {
+            mailString += value;
+        }
     }
     $('#emailLink').attr('href', mailString);
 });
 
 $('#Doel').on('change', function(e) {
     $('#Doel').text(e.target.value);
-    let mailString = 'mailto:' + values['email'] + '?';
+    let mailString = '';
     values['doel'] = e.target.value;
     for (const [key, value] of Object.entries(values)) {
-        if (key != values['email'])
-            if(key == 'subject'){
-                mailString += 'subject=' + value + '&body=';
-            } else {
-                mailString += value;
-            }
+        if(key == 'email'){
+            mailString += 'mailto:' + values['email'] + '?'
+        }
+        if(key == 'subject'){
+            mailString += 'subject=' + value + '&body=';
+        } else {
+            mailString += value;
+        }
     }
     $('#emailLink').attr('href', mailString);
 });
