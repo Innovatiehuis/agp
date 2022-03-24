@@ -39,8 +39,9 @@ var emailBody3 = $('#doelgroep').prop('innerText');
 var emailBody4 = $('#Doel').prop('innerText');
 
 
-
- $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
+setTimeout(() => {
+     $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
+})
 
 
 // $(function (e) {
