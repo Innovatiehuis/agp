@@ -31,18 +31,26 @@ $('#Doel').on('change', function(e) {
     $('#ingevoerdeDoel').text(e.target.value || 'willms_abby@gmail.com');
 });
 
-
-
-$(function (e) {
-  $('#emailLink').on('click', function (event) {
-//      event.preventDefault();
-    var email = 'innovatiehuis.noord-nederland@politie.nl';
+var email = 'innovatiehuis.noord-nederland@politie.nl';
     var subject = $('#ingevoerdeNaam').prop('innerHTML');
     var emailBody1 = $('#business-type').prop('innerHTML');
     var emailBody2 = $('#ingevoerdeIdee').prop('innerHTML');
     var emailBody3 = $('#ingevoerdedoelgroep').prop('innerHTML');
     var emailBody4 = $('#ingevoerdeDoel').prop('innerHTML');
-    $('#emailLink').prop('href') = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
-    // window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
-  });
-});
+
+
+ $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
+
+// $(function (e) {
+//   $('#emailLink').on('click', function (event) {
+// //      event.preventDefault();
+//     var email = 'innovatiehuis.noord-nederland@politie.nl';
+//     var subject = $('#ingevoerdeNaam').prop('innerHTML');
+//     var emailBody1 = $('#business-type').prop('innerHTML');
+//     var emailBody2 = $('#ingevoerdeIdee').prop('innerHTML');
+//     var emailBody3 = $('#ingevoerdedoelgroep').prop('innerHTML');
+//     var emailBody4 = $('#ingevoerdeDoel').prop('innerHTML');
+//     $('#emailLink').prop('href') = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
+//     window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
+//   });
+// });
