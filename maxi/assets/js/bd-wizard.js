@@ -38,21 +38,27 @@ var email = 'innovatiehuis.noord-nederland@politie.nl';
     var emailBody3 = $('#doelgroep').on('change', function(e) {$('#ingevoerdedoelgroep').prop('innerHTML'); });
     var emailBody4 = $('#Doel').on('change', function(e) {$('#ingevoerdeDoel').prop('innerHTML'); });
 
-//console.$('#ingevoerdeNaam').prop('innerHTML');
+
 
  $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
 
 
-// $(function (e) {
-//   $('#emailLink').on('click', function (event) {
-// //      event.preventDefault();
-//     var email = 'innovatiehuis.noord-nederland@politie.nl';
-//     var subject = $('#ingevoerdeNaam').prop('innerHTML');
-//     var emailBody1 = $('#business-type').prop('innerHTML');
-//     var emailBody2 = $('#ingevoerdeIdee').prop('innerHTML');
-//     var emailBody3 = $('#ingevoerdedoelgroep').prop('innerHTML');
-//     var emailBody4 = $('#ingevoerdeDoel').prop('innerHTML');
-//     $('#emailLink').prop('href') = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
-//     window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
-//   });
-// });
+$(function (e) {
+  $('#emailLink').on('click', function (event) {
+//      event.preventDefault();
+    console.subject
+    console.emailBody1
+    console.emailBody2
+    console.emailBody3
+    console.emailBody4
+    var email = 'innovatiehuis.noord-nederland@politie.nl';
+    var subject = $('#ingevoerdeNaam').prop('innerHTML');
+    var emailBody1 = $('#business-type').prop('innerHTML');
+    var emailBody2 = $('#ingevoerdeIdee').prop('innerHTML');
+    var emailBody3 = $('#ingevoerdedoelgroep').prop('innerHTML');
+    var emailBody4 = $('#ingevoerdeDoel').prop('innerHTML');
+    $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
+
+    //window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
+  });
+});
