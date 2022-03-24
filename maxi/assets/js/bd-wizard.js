@@ -16,6 +16,7 @@ $('.purpose-radio-input').on('change', function(e) {
 
 $('#NaamIdee').on('change', function(e) {
     $('#ingevoerdeNaam').text(e.target.value);
+    var subject = e.target.value;
 });
 
 
@@ -32,7 +33,7 @@ $('#Doel').on('change', function(e) {
 });
 
 var email = 'innovatiehuis.noord-nederland@politie.nl';
-var subject = $('#ingevoerdeNaam').text('value');
+
 var emailBody1 = $('.purpose-radio-input').prop('innerText');
 var emailBody2 = $('#OntstaanIdee').prop('innerText');
 var emailBody3 = $('#doelgroep').prop('innerText');
