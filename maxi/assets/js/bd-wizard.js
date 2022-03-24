@@ -49,7 +49,6 @@ $('#OntstaanIdee').on('change', function(e) {
             } else {
                 mailString += value;
             }
-        mailString += key + '=' + value + '&';
     }
     $('#emailLink').attr('href', mailString);
 });
@@ -65,7 +64,6 @@ $('#doelgroep').on('change', function(e) {
             } else {
                 mailString += value;
             }
-        mailString += key + '=' + value + '&';
     }
     $('#emailLink').attr('href', mailString);
 });
@@ -81,7 +79,6 @@ $('#Doel').on('change', function(e) {
             } else {
                 mailString += value;
             }
-        mailString += key + '=' + value + '&';
     }
     $('#emailLink').attr('href', mailString);
 });
