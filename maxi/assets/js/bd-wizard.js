@@ -13,7 +13,9 @@ var emailLink = 'mailto:' + email + '?subject=&body='
 let values = {
     email: 'innovatiehuis.noord-nederland@politie.nl',
     subject: '',
-    body: '',
+    ingevoerdeIdee: '',
+    ingevoerdedoelgroep: '',
+    doel: '',
 }
 
 $('.purpose-radio-input').on('change', function(e) {
@@ -26,22 +28,62 @@ $('#NaamIdee').on('change', function(e) {
     values['subject'] = e.target.value;
     for (const [key, value] of Object.entries(values)) {
         if (key != values['email'])
-        mailString += key + '=' + value + '&';
+            if(key == 'subject'){
+                mailString += 'subject=' + value + '&body=';
+            } else {
+                mailString += value;
+            }
     }
-    $('#emailLink').attr('href', mailString)
+    $('#emailLink').attr('href', mailString);
 });
 
 
 $('#OntstaanIdee').on('change', function(e) {
     $('#ingevoerdeIdee').text(e.target.value);
+    let mailString = 'mailto:' + values['email'] + '?';
+    values['ingevoerdeIdee'] = e.target.value;
+    for (const [key, value] of Object.entries(values)) {
+        if (key != values['email'])
+            if(key == 'subject'){
+                mailString += 'subject=' + value + '&body=';
+            } else {
+                mailString += value;
+            }
+        mailString += key + '=' + value + '&';
+    }
+    $('#emailLink').attr('href', mailString);
 });
 
 $('#doelgroep').on('change', function(e) {
     $('#ingevoerdedoelgroep').text(e.target.value);
+    let mailString = 'mailto:' + values['email'] + '?';
+    values['ingevoerdedoelgroep'] = e.target.value;
+    for (const [key, value] of Object.entries(values)) {
+        if (key != values['email'])
+            if(key == 'subject'){
+                mailString += 'subject=' + value + '&body=';
+            } else {
+                mailString += value;
+            }
+        mailString += key + '=' + value + '&';
+    }
+    $('#emailLink').attr('href', mailString);
 });
 
 $('#Doel').on('change', function(e) {
-    $('#ingevoerdeDoel').text(e.target.value);
+    $('#Doel').text(e.target.value);
+    let mailString = 'mailto:' + values['email'] + '?';
+    values['doel'] = e.target.value;
+    for (const [key, value] of Object.entries(values)) {
+        if (key != values['email'])
+            if(key == 'subject'){
+                mailString += 'subject=' + value + '&body=';
+            } else {
+                mailString += value;
+            }
+        mailString += key + '=' + value + '&';
+    }
+    $('#emailLink').attr('href', mailString);
 });
 
 
