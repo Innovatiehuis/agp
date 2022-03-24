@@ -44,7 +44,7 @@ setTimeout(() => {
     console.log( $('#ingevoerdeNaam').prop('innerHTML'))
     console.log( $('#ingevoerdeNaam').innerHTML)
     console.log( $('#ingevoerdeNaam').text())
-    console.log( $('#ingevoerdeNaam').html()
+    console.log( $('#ingevoerdeNaam').html())
 
      $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
 })
