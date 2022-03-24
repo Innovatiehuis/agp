@@ -35,16 +35,16 @@ $('#Doel').on('change', function(e) {
 
 setTimeout(() => {
     var email = 'innovatiehuis.noord-nederland@politie.nl';
-    var subject = $('#ingevoerdeNaam').text();
+    var subject = $('#ingevoerdeNaam').prop('innerHTML').toString();
     var emailBody1 = $('.purpose-radio-input').prop('innerText');
     var emailBody2 = $('#OntstaanIdee').prop('innerText');
     var emailBody3 = $('#doelgroep').prop('innerText');
     var emailBody4 = $('#Doel').prop('innerText');
-    console.log( $('#ingevoerdeNaam'))
-    console.log( $('#NaamIdee'))
-    console.log(document.getElementById('ingevoerdeNaam'))
-    console.log(document.getElementById('NaamIdee'))
-
+    console.log( $('#ingevoerdeNaam').prop('innerHTML').toString())
+    console.log( $('#ingevoerdeNaam').prop('innerHTML'))
+    console.log( $('#ingevoerdeNaam').innerHTML)
+    console.log( $('#ingevoerdeNaam').text())
+    console.log( $('#ingevoerdeNaam').html()
 
      $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
 })
