@@ -33,7 +33,7 @@ $('#Doel').on('change', function(e) {
 
 var email = 'innovatiehuis.noord-nederland@politie.nl';
 var subject = $('#ingevoerdeNaam').text(e.target.value);
-var emailBody1 = $('#business-type').prop('innerText');
+var emailBody1 = $('.purpose-radio-input').prop('innerText');
 var emailBody2 = $('#OntstaanIdee').prop('innerText');
 var emailBody3 = $('#doelgroep').prop('innerText');
 var emailBody4 = $('#Doel').prop('innerText');
