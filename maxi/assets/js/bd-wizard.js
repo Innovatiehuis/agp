@@ -31,7 +31,7 @@ var emailBody4 = $('#Doel').on('change', function(e) {
     $('#ingevoerdeDoel').text(e.target.value || 'willms_abby@gmail.com');
 });
 
-// var email = 'innovatiehuis.noord-nederland@politie.nl';
+var email = 'innovatiehuis.noord-nederland@politie.nl';
 //     var subject = $('#ingevoerdeNaam').prop('innerHTML');
 //     var emailBody1 = $('#business-type').prop('innerHTML');
 //     var emailBody2 = $('#OntstaanIdee').on('change', function(e) {$('#ingevoerdeIdee').prop('innerHTML'); });
