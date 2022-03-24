@@ -15,20 +15,20 @@ $('.purpose-radio-input').on('change', function(e) {
 });
 
 $('#NaamIdee').on('change', function(e) {
-    $('#ingevoerdeNaam').text(e.target.value || 'Cha');
+    $('#ingevoerdeNaam').text(e.target.value);
 });
 
 
 $('#OntstaanIdee').on('change', function(e) {
-    $('#ingevoerdeIdee').text(e.target.value || 'Ji-Hun C');
+    $('#ingevoerdeIdee').text(e.target.value);
 });
 
 $('#doelgroep').on('change', function(e) {
-    $('#ingevoerdedoelgroep').text(e.target.value || '+230-582-6609');
+    $('#ingevoerdedoelgroep').text(e.target.value);
 });
 
 $('#Doel').on('change', function(e) {
-    $('#ingevoerdeDoel').text(e.target.value || 'willms_abby@gmail.com');
+    $('#ingevoerdeDoel').text(e.target.value);
 });
 
 var email = 'innovatiehuis.noord-nederland@politie.nl';
