@@ -38,9 +38,10 @@ var email = 'innovatiehuis.noord-nederland@politie.nl';
     var emailBody3 = $('#ingevoerdedoelgroep').prop('innerHTML');
     var emailBody4 = $('#ingevoerdeDoel').prop('innerHTML');
 
-console.$('#ingevoerdeNaam').prop('innerHTML');
+//console.$('#ingevoerdeNaam').prop('innerHTML');
 
  $('#emailLink').attr('href=', '"mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4 + '"');
+
 
 // $(function (e) {
 //   $('#emailLink').on('click', function (event) {
