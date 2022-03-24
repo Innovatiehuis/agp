@@ -93,37 +93,28 @@ $('#Doel').on('change', function(e) {
 
 
 
-var email = 'innovatiehuis.noord-nederland@politie.nl';
-var subject = $('#ingevoerdeNaam').prop('innerHTML').toString();
-var emailBody1 = $('.purpose-radio-input').prop('innerText');
-var emailBody2 = $('#OntstaanIdee').prop('innerText');
-var emailBody3 = $('#doelgroep').prop('innerText');
-var emailBody4 = $('#Doel').prop('innerText');
-console.log( $('#ingevoerdeNaam').prop('innerHTML').toString())
-console.log( $('#ingevoerdeNaam').prop('innerHTML'))
-console.log( $('#ingevoerdeNaam').innerHTML)
-console.log( $('#ingevoerdeNaam').text())
-console.log( $('#ingevoerdeNaam').html())
 
- $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
+console.log(2)
+
+//  $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
 
 
-// $(function (e) {
-//   $('#emailLink').on('click', function (event) {
-// //      event.preventDefault();
-//     console.subject
-//     console.emailBody1
-//     console.emailBody2
-//     console.emailBody3
-//     console.emailBody4
-//     var email = 'innovatiehuis.noord-nederland@politie.nl';
-//     var subject = $('#ingevoerdeNaam').prop('innerHTML');
-//     var emailBody1 = $('#business-type').prop('innerHTML');
-//     var emailBody2 = $('#ingevoerdeIdee').prop('innerHTML');
-//     var emailBody3 = $('#ingevoerdedoelgroep').prop('innerHTML');
-//     var emailBody4 = $('#ingevoerdeDoel').prop('innerHTML');
-//     $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
+// // $(function (e) {
+// //   $('#emailLink').on('click', function (event) {
+// // //      event.preventDefault();
+// //     console.subject
+// //     console.emailBody1
+// //     console.emailBody2
+// //     console.emailBody3
+// //     console.emailBody4
+// //     var email = 'innovatiehuis.noord-nederland@politie.nl';
+// //     var subject = $('#ingevoerdeNaam').prop('innerHTML');
+// //     var emailBody1 = $('#business-type').prop('innerHTML');
+// //     var emailBody2 = $('#ingevoerdeIdee').prop('innerHTML');
+// //     var emailBody3 = $('#ingevoerdedoelgroep').prop('innerHTML');
+// //     var emailBody4 = $('#ingevoerdeDoel').prop('innerHTML');
+// //     $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
 
-//     //window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
-//   });
-// });
+// //     //window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4;
+// //   });
+// // });
