@@ -32,8 +32,8 @@ $('#Doel').on('change', function(e) {
 });
 
 var email = 'innovatiehuis.noord-nederland@politie.nl';
-    var subject = JSON.stringify($('#NaamIdee').on('change', function(e) {$('#ingevoerdeNaam').text(e.target.value); }));
-    var emailBody1 = $('.purpose-radio-input').on('change', function(e) {$('#business-type').prop('innerHTML'); });
+    var subject = $('#ingevoerdeNaam').prop('innerHTML');
+    var emailBody1 = $('#business-type').prop('innerHTML');
     var emailBody2 = $('#OntstaanIdee').on('change', function(e) {$('#ingevoerdeIdee').prop('innerHTML'); });
     var emailBody3 = $('#doelgroep').on('change', function(e) {$('#ingevoerdedoelgroep').prop('innerHTML'); });
     var emailBody4 = $('#Doel').on('change', function(e) {$('#ingevoerdeDoel').prop('innerHTML'); });
