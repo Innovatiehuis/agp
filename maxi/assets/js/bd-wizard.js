@@ -9,7 +9,6 @@ $("#wizard").steps({
 });
 
 //Form control
-var emailLink = 'mailto:' + email + '?subject=&body='
 let values = {
     email: 'innovatiehuis.noord-nederland@politie.nl',
     subject: '',
@@ -43,7 +42,9 @@ $('#NaamIdee').on('change', function(e) {
 $('#OntstaanIdee').on('change', function(e) {
     $('#ingevoerdeIdee').text(e.target.value);
     let mailString = '';
+
     values['ingevoerdeIdee'] = e.target.value;
+
     for (const [key, value] of Object.entries(values)) {
         if(key == 'email'){
             mailString += 'mailto:' + values['email'] + '?'
@@ -54,6 +55,7 @@ $('#OntstaanIdee').on('change', function(e) {
             mailString += value;
         }
     }
+
     $('#emailLink').attr('href', mailString);
 });
 
