@@ -16,7 +16,6 @@ $('.purpose-radio-input').on('change', function(e) {
 
 $('#NaamIdee').on('change', function(e) {
     $('#ingevoerdeNaam').text(e.target.value);
-    var subject = e.target.value;
 });
 
 
@@ -32,15 +31,16 @@ $('#Doel').on('change', function(e) {
     $('#ingevoerdeDoel').text(e.target.value);
 });
 
-var email = 'innovatiehuis.noord-nederland@politie.nl';
-
-var emailBody1 = $('.purpose-radio-input').prop('innerText');
-var emailBody2 = $('#OntstaanIdee').prop('innerText');
-var emailBody3 = $('#doelgroep').prop('innerText');
-var emailBody4 = $('#Doel').prop('innerText');
 
 
 setTimeout(() => {
+    var email = 'innovatiehuis.noord-nederland@politie.nl';
+    var subject = $('#ingevoerdeNaam').text();
+    var emailBody1 = $('.purpose-radio-input').prop('innerText');
+    var emailBody2 = $('#OntstaanIdee').prop('innerText');
+    var emailBody3 = $('#doelgroep').prop('innerText');
+    var emailBody4 = $('#Doel').prop('innerText');
+
      $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody1 + emailBody2 + emailBody3 + emailBody4);
 })
 
