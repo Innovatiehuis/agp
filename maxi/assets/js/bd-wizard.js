@@ -14,7 +14,7 @@ var emailBody1 = $('.purpose-radio-input').on('change', function(e) {
     $('#business-type').text(e.target.value);
 });
 
-var subject = $('#NaamIdee').on('change', function(e) {
+$('#subject') = $('#NaamIdee').on('change', function(e) {
     $('#ingevoerdeNaam').text(e.target.value || 'Cha');
 });
 
@@ -40,7 +40,7 @@ var email = 'innovatiehuis.noord-nederland@politie.nl';
 
 
 
- $('#emailLink').attr('href', 'mailto:' + email + '?subject=' + subject.text(e.target.value).prop('innerHTML') + '&body=' + emailBody1.prop('innerHTML') + emailBody2.prop('innerHTML') + emailBody3.prop('innerHTML') + emailBody4.prop('innerHTML'));
+ $('#emailLink', e).attr('href', 'mailto:' + email + '?subject=' + $('#subject').prop('innerHTML') + '&body=' + emailBody1.prop('innerHTML') + emailBody2.prop('innerHTML') + emailBody3.prop('innerHTML') + emailBody4.prop('innerHTML'));
 
 
 // $(function (e) {
