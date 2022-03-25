@@ -12,16 +12,16 @@ $("#wizard").steps({
 let values = {
     email: 'innovatiehuis.noord-nederland@politie.nl',
     subject: '',
-    ingevoerdeIdee: '',
-    ingevoerdedoelgroep: '',
-    doel: '',
-    business_type: '',
+    Idee: '',
+    Doelgroep: '',
+    Doel: '',
+    Bericht: '',
 }
 
 $('.purpose-radio-input').on('change', function(e) {
     let mailString = '';
     $('#business-type').text(e.target.value);
-    values['business_type'] = e.target.value;
+    values['Bericht'] = e.target.value;
     for (const [key, value] of Object.entries(values)) {
         if(key == 'email'){
             mailString += 'mailto:' + values['email'] + '?'
@@ -57,7 +57,7 @@ $('#OntstaanIdee').on('change', function(e) {
     $('#ingevoerdeIdee').text(e.target.value);
     let mailString = '';
 
-    values['ingevoerdeIdee'] = e.target.value;
+    values['Idee'] = e.target.value;
 
     for (const [key, value] of Object.entries(values)) {
         if(key == 'email'){
@@ -76,7 +76,7 @@ $('#OntstaanIdee').on('change', function(e) {
 $('#doelgroep').on('change', function(e) {
     $('#ingevoerdedoelgroep').text(e.target.value);
     let mailString = '';
-    values['ingevoerdedoelgroep'] = e.target.value;
+    values['Doelgroep'] = e.target.value;
     for (const [key, value] of Object.entries(values)) {
         if(key == 'email'){
             mailString += 'mailto:' + values['email'] + '?'
@@ -93,7 +93,7 @@ $('#doelgroep').on('change', function(e) {
 $('#Doel').on('change', function(e) {
     $('#Doel').text(e.target.value);
     let mailString = '';
-    values['doel'] = e.target.value;
+    values['Doel'] = e.target.value;
     for (const [key, value] of Object.entries(values)) {
         if(key == 'email'){
             mailString += 'mailto:' + values['email'] + '?'
