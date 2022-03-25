@@ -11,11 +11,11 @@ $("#wizard").steps({
 //Form control
 let values = {
     email: 'innovatiehuis.noord-nederland@politie.nl',
-    subject: '',
-    ingevoerdeIdee: '',
-    ingevoerdedoelgroep: '',
-    doel: '',
-    business_type: '',
+    subject: 'Agora Formulier: ',
+    ingevoerdeIdee: 'Idee/vraag/oplossing: ',
+    ingevoerdedoelgroep: 'Doelgroep:',
+    doel: 'Doel, waarom en uitdaging: ',
+    business_type: 'Soort melding: ',
 }
 
 $('.purpose-radio-input').on('change', function(e) {
@@ -108,4 +108,4 @@ $('#Doel').on('change', function(e) {
 });
 
 
-console.log(6)
+console.log(6) 
