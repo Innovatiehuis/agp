@@ -11,11 +11,11 @@ $("#wizard").steps({
 //Form control
 let values = {
     email: 'innovatiehuis.noord-nederland@politie.nl',
-    subject: 'Agora Formulier: ',
-    ingevoerdeIdee: 'Idee/vraag/oplossing: ',
-    ingevoerdedoelgroep: 'Doelgroep:',
-    doel: 'Doel, waarom en uitdaging: ',
-    business_type: 'Soort melding: ',
+    subject: '',
+    ingevoerdeIdee: '',
+    ingevoerdedoelgroep: '',
+    doel: '',
+    business_type: '',
 }
 
 $('.purpose-radio-input').on('change', function(e) {
@@ -29,7 +29,7 @@ $('.purpose-radio-input').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += value + '%0D%0A';
+            mailString += 'Soort Melding: ' + value + '%0D%0A';
         }
     }
     $('#emailLink').attr('href', mailString);
@@ -46,7 +46,7 @@ $('#NaamIdee').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += value + '%0D%0A';
+            mailString += 'Agora Formulier: ' + value + '%0D%0A';
         }
     }
     $('#emailLink').attr('href', mailString);
@@ -66,7 +66,7 @@ $('#OntstaanIdee').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += value + '%0D%0A';
+            mailString += 'Idee / Vraag of Oplossing: ' +value + '%0D%0A';
         }
     }
 
@@ -84,7 +84,7 @@ $('#doelgroep').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += value + '%0D%0A';
+            mailString += 'Doelgroep: ' +value + '%0D%0A';
         }
     }
     $('#emailLink').attr('href', mailString);
@@ -101,7 +101,7 @@ $('#Doel').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += value + '%0D%0A';
+            mailString += 'Doel, waarom en uitdaging: ' +value + '%0D%0A';
         }
     }
     $('#emailLink').attr('href', mailString);
