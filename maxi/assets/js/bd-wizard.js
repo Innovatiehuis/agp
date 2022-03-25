@@ -108,4 +108,4 @@ $('#Doel').on('change', function(e) {
 });
 
 
-console.log(13) 
+console.log(14) 
