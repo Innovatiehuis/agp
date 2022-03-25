@@ -32,7 +32,7 @@ $('.purpose-radio-input').on('change', function(e) {
             mailString += key + '%3A' + '%20' + value + '%0D%0A';
         }
     }
-    $('#finish').attr('href', mailString);
+    $('#emailLink').attr('href', mailString);
 });
 
 $('#NaamIdee').on('change', function(e) {
@@ -49,7 +49,7 @@ $('#NaamIdee').on('change', function(e) {
             mailString += key + '%3A' + '%20' + value + '%0D%0A';
         }
     }
-    $('#finish').attr('href', mailString);
+    $('#emailLink').attr('href', mailString);
 });
 
 
@@ -70,7 +70,7 @@ $('#OntstaanIdee').on('change', function(e) {
         }
     }
 
-    $('#finish').attr('href', mailString);
+    $('#emailLink').attr('href', mailString);
 });
 
 $('#doelgroep').on('change', function(e) {
@@ -87,7 +87,7 @@ $('#doelgroep').on('change', function(e) {
             mailString += key + '%3A' + '%20' + value + '%0D%0A';
         }
     }
-    $('#finish').attr('href', mailString);
+    $('#emailLink').attr('href', mailString);
 });
 
 $('#Doel').on('change', function(e) {
@@ -104,7 +104,7 @@ $('#Doel').on('change', function(e) {
             mailString += key + '%3A' + '%20' + value + '%0D%0A';
         }
     }
-    $('#finish').attr('href', mailString);
+    $('#emailLink').attr('href', mailString);
 });
 
 
