@@ -29,7 +29,7 @@ $('.purpose-radio-input').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += key + ': &#160;' + value + '%0D%0A';
+            mailString += key + '&#58; &#160;' + value + '%0D%0A';
         }
     }
     $('#emailLink').attr('href', mailString);
@@ -46,7 +46,7 @@ $('#NaamIdee').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += key + ': &#160;' + value + '%0D%0A';
+            mailString += key + '&#58; &#160;' + value + '%0D%0A';
         }
     }
     $('#emailLink').attr('href', mailString);
@@ -66,7 +66,7 @@ $('#OntstaanIdee').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += key + ': &#160;' + value + '%0D%0A';
+            mailString += key + '&#58; &#160;' + value + '%0D%0A';
         }
     }
 
@@ -84,7 +84,7 @@ $('#doelgroep').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += key + ': &#160;' + value + '%0D%0A';
+            mailString += key + '&#58; &#160;' + value + '%0D%0A';
         }
     }
     $('#emailLink').attr('href', mailString);
@@ -101,7 +101,7 @@ $('#Doel').on('change', function(e) {
         else if(key == 'subject'){
             mailString += 'subject=' + value + '&body=';
         } else {
-            mailString += key + ': &#160;' + value + '%0D%0A';
+            mailString += key + '&#58; &#160;' + value + '%0D%0A';
         }
     }
     $('#emailLink').attr('href', mailString);
