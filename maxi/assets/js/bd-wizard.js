@@ -18,6 +18,8 @@ let values = {
     Bericht: '',
 }
 
+var '#emailLink' = ''
+
 $('.purpose-radio-input').on('change', function(e) {
     let mailString = '';
     $('#business-type').text(e.target.value);
