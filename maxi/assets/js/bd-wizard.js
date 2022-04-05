@@ -17,6 +17,9 @@ let values = {
     Doel: '',
     Bericht: '',
     naam: '',
+    afdeling: '',
+    functie: '',
+    telefoonnummer: '',
 }
 
 $('.purpose-radio-input').on('change', function(e) {
@@ -125,4 +128,55 @@ $('#naam').on('change', function(e) {
     $('#emailLink').attr('href', mailString);
 });
 
-console.log(22) 
+$('#afdeling').on('change', function(e) {
+    $('#indienAfdeling').text(e.target.value);
+    let mailString = '';
+    values['afdeling'] = e.target.value;
+    for (const [key, value] of Object.entries(values)) {
+        if(key == 'email'){
+            mailString += 'mailto:' + values['email'] + '?'
+        }
+        else if(key == 'subject'){
+            mailString += 'subject=' + value + '&body=';
+        } else {
+            mailString += key + '%3A' + '%20' + value + '%0D%0A';
+        }
+    }
+    $('#emailLink').attr('href', mailString);
+});
+
+$('#functie').on('change', function(e) {
+    $('#indienFunctie').text(e.target.value);
+    let mailString = '';
+    values['functie'] = e.target.value;
+    for (const [key, value] of Object.entries(values)) {
+        if(key == 'email'){
+            mailString += 'mailto:' + values['email'] + '?'
+        }
+        else if(key == 'subject'){
+            mailString += 'subject=' + value + '&body=';
+        } else {
+            mailString += key + '%3A' + '%20' + value + '%0D%0A';
+        }
+    }
+    $('#emailLink').attr('href', mailString);
+});
+
+$('#telefoonnummer').on('change', function(e) {
+    $('#indienTelefoonnummer').text(e.target.value);
+    let mailString = '';
+    values['telefoonnummer'] = e.target.value;
+    for (const [key, value] of Object.entries(values)) {
+        if(key == 'email'){
+            mailString += 'mailto:' + values['email'] + '?'
+        }
+        else if(key == 'subject'){
+            mailString += 'subject=' + value + '&body=';
+        } else {
+            mailString += key + '%3A' + '%20' + value + '%0D%0A';
+        }
+    }
+    $('#emailLink').attr('href', mailString);
+});
+
+console.log(23) 
