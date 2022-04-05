@@ -91,7 +91,7 @@ $('#doelgroep').on('change', function(e) {
 });
 
 $('#Doel').on('change', function(e) {
-    $('#Doel').text(e.target.value);
+    $('#ingevoerdedoel').text(e.target.value);
     let mailString = '';
     values['Doel'] = e.target.value;
     for (const [key, value] of Object.entries(values)) {
