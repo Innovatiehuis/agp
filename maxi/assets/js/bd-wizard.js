@@ -48,7 +48,7 @@ $('#NaamIdee').on('change', function(e) {
             mailString += 'mailto:' + values['email'] + '?'
         }
         else if(key == 'subject'){
-            mailString += 'subject=' + value + '&body=';
+            mailString += 'subject= Bericht van Agora:' + value + '&body=';
         } else {
             mailString += key + '%3A' + '%20' + value + '%0D%0A';
         }
@@ -179,4 +179,4 @@ $('#telefoonnummer').on('change', function(e) {
     $('#emailLink').attr('href', mailString);
 });
 
-console.log(23) 
+console.log(24) 
