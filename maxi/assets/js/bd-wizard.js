@@ -16,6 +16,7 @@ let values = {
     Doelgroep: '',
     Doel: '',
     Bericht: '',
+    naam: '',
 }
 
 $('.purpose-radio-input').on('change', function(e) {
@@ -107,5 +108,21 @@ $('#Doel').on('change', function(e) {
     $('#emailLink').attr('href', mailString);
 });
 
+$('#naam').on('change', function(e) {
+    $('#indienNaam').text(e.target.value);
+    let mailString = '';
+    values['naam'] = e.target.value;
+    for (const [key, value] of Object.entries(values)) {
+        if(key == 'email'){
+            mailString += 'mailto:' + values['email'] + '?'
+        }
+        else if(key == 'subject'){
+            mailString += 'subject=' + value + '&body=';
+        } else {
+            mailString += key + '%3A' + '%20' + value + '%0D%0A';
+        }
+    }
+    $('#emailLink').attr('href', mailString);
+});
 
-console.log(21) 
+console.log(22) 
