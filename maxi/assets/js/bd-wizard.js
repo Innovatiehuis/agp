@@ -31,7 +31,7 @@ $('.purpose-radio-input').on('change', function(e) {
             mailString += 'mailto:' + values['email'] + '?'
         }
         else if(key == 'subject'){
-            mailString += 'subject=' + value + '&body=';
+            mailString += 'subject= Bericht van Agora:' + value + '&body=';
         } else {
             mailString += key + '%3A' + '%20' + value + '%0D%0A';
         }
@@ -68,7 +68,7 @@ $('#OntstaanIdee').on('change', function(e) {
             mailString += 'mailto:' + values['email'] + '?'
         }
         else if(key == 'subject'){
-            mailString += 'subject=' + value + '&body=';
+            mailString += 'subject= Bericht van Agora:' + value + '&body=';
         } else {
             mailString += key + '%3A' + '%20' + value + '%0D%0A';
         }
@@ -86,7 +86,7 @@ $('#doelgroep').on('change', function(e) {
             mailString += 'mailto:' + values['email'] + '?'
         }
         else if(key == 'subject'){
-            mailString += 'subject=' + value + '&body=';
+            mailString += 'subject= Bericht van Agora:' + value + '&body=';
         } else {
             mailString += key + '%3A' + '%20' + value + '%0D%0A';
         }
@@ -103,7 +103,7 @@ $('#Doel').on('change', function(e) {
             mailString += 'mailto:' + values['email'] + '?'
         }
         else if(key == 'subject'){
-            mailString += 'subject=' + value + '&body=';
+            mailString += 'subject= Bericht van Agora:' + value + '&body=';
         } else {
             mailString += key + '%3A' + '%20' + value + '%0D%0A';
         }
@@ -120,7 +120,7 @@ $('#naam').on('change', function(e) {
             mailString += 'mailto:' + values['email'] + '?'
         }
         else if(key == 'subject'){
-            mailString += 'subject=' + value + '&body=';
+            mailString += 'subject= Bericht van Agora:' + value + '&body=';
         } else {
             mailString += key + '%3A' + '%20' + value + '%0D%0A';
         }
@@ -137,7 +137,7 @@ $('#afdeling').on('change', function(e) {
             mailString += 'mailto:' + values['email'] + '?'
         }
         else if(key == 'subject'){
-            mailString += 'subject=' + value + '&body=';
+            mailString += 'subject= Bericht van Agora:' + value + '&body=';
         } else {
             mailString += key + '%3A' + '%20' + value + '%0D%0A';
         }
@@ -154,7 +154,7 @@ $('#functie').on('change', function(e) {
             mailString += 'mailto:' + values['email'] + '?'
         }
         else if(key == 'subject'){
-            mailString += 'subject=' + value + '&body=';
+            mailString += 'subject= Bericht van Agora:' + value + '&body=';
         } else {
             mailString += key + '%3A' + '%20' + value + '%0D%0A';
         }
@@ -171,7 +171,7 @@ $('#telefoonnummer').on('change', function(e) {
             mailString += 'mailto:' + values['email'] + '?'
         }
         else if(key == 'subject'){
-            mailString += 'subject=' + value + '&body=';
+            mailString += 'subject= Bericht van Agora:' + value + '&body=';
         } else {
             mailString += key + '%3A' + '%20' + value + '%0D%0A';
         }
@@ -179,4 +179,4 @@ $('#telefoonnummer').on('change', function(e) {
     $('#emailLink').attr('href', mailString);
 });
 
-console.log(24) 
+console.log(25) 
