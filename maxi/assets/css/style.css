@@ -85,27 +85,6 @@ h1, h2, h3, h4, h5, h6 {
   content: 'and I am a Dog!'
 }
 
-.img-fluid:before {
-  position: absolute;
-  padding: 15px 20px;
-  left: -40px;
-  bottom: -9px;
-  font-size: 20px;
-  font-family: 'Gloria Hallelujah', cursive;
-  color: #7107E9;
-  background: #ffffff;
-  transition: all .4s ease-out;
-  transform: translateY(150px);
-  opacity: 0;
-  z-index: 1;
-  border-radius: 100px;
-  font-weight: normal;
-  border: .2em solid #E89C0C;
-  -webkit-box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, .5);
-  -moz-box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, .5);
-  box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, .5);
-}
-
 .img-fluid:hover:before {
   bottom: 45px;
   opacity: 100;
@@ -115,29 +94,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-10px);
 }
 
-.floatButton {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.floatButton:hover,
-.floatButton:focus,
-.floatButton:active {
-  -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);
-}
 
 /*--------------------------------------------------------------
 # Back to top button
