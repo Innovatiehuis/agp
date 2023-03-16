@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 #eaglebase {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 3;
@@ -75,23 +75,6 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   z-index: 3;
-}
-
-.niels:before {
-  content: 'I am a Cat!'
-}
-
-.lily:before {
-  content: 'and I am a Dog!'
-}
-
-.img-fluid:hover:before {
-  bottom: 45px;
-  opacity: 100;
-}
-
-.img-fluid:hover img {
-  transform: translateY(-10px);
 }
 
 
