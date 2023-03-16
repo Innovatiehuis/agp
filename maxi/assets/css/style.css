@@ -111,20 +111,6 @@ h3 {
   text-align: center;
 }
 
-.imgButton {
-  position: absolute;
-}
-
-.imgButton img {
-  max-width: 100%;
-  height: auto;
-  transform: translateY(0);
-  transition: all .4s ease-out;
-  border: .5em solid #e89c0c;
-  -webkit-box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, .3);
-  -moz-box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, .3);
-  box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, .3);
-}
 
 .niels:before {
   content: 'I am a Cat!'
@@ -134,7 +120,7 @@ h3 {
   content: 'and I am a Dog!'
 }
 
-.imgButton:before {
+.img-fluid:before {
   position: absolute;
   padding: 15px 20px;
   left: -40px;
@@ -155,12 +141,12 @@ h3 {
   box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, .5);
 }
 
-.imgButton:hover:before {
+.img-fluid:hover:before {
   bottom: 45px;
   opacity: 100;
 }
 
-.imgButton:hover img {
+.img-fluid:hover img {
   transform: translateY(-10px);
 }
 
