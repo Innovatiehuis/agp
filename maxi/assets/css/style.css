@@ -33,6 +33,9 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #responsivepicture {
   position: relative;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 #eaglebase {
   position: relative;
@@ -44,13 +47,13 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 4;
+  z-index: 3;
 }
 #lily {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 4;
+  z-index: 3;
 }
 #danielle {
   position: absolute;
