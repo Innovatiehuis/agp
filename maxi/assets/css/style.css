@@ -31,55 +31,8 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # config for responsive picture
 --------------------------------------------------------------*/
-#responsivepicture {
-  position: relative;
-}
-#eaglebase {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-#niels {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-#lily {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-#danielle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-#johan {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-#tim {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-#annemarie {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
+
+
 
 
 

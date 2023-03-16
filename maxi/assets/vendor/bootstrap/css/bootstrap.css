@@ -603,6 +603,12 @@ progress {
   height: auto;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
 .figure {
   display: inline-block;
 }
