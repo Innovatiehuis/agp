@@ -76,41 +76,6 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   z-index: 3;
 }
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
-body {
-  background-color: #9c0ce8;
-}
-
-h1 {
-  margin-top: 10px;
-  text-align: center;
-  color: #E89C0C;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-weight: 600;
-  font-size: 3em;
-}
-
-h2 {
-  text-align: center;
-  color: #440CE8;
-  font-family: 'arial', sans-serif;
-  font-size: 2em;
-}
-
-h3 {
-  text-align: center;
-  color: #440CE8;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-weight: 600;
-  font-size: 1.4em;
-}
-
-.col-lg-6 {
-  margin-bottom: 20px;
-  margin-top: 5px;
-  text-align: center;
-}
-
 
 .niels:before {
   content: 'I am a Cat!'
