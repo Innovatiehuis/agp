@@ -80,14 +80,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
   height: auto;
 }
-.img-henk {
-  max-width: 100%;
-  height: auto;
-}
-.img-henk:hover {
-  background-color: red;
-  opacity: 0.5;
-}
+
 
 
 /*--------------------------------------------------------------
