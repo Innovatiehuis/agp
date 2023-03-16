@@ -111,6 +111,8 @@ h3 {
 }
 
 .imgButton img {
+  max-width: 100%;
+  height: auto;
   transform: translateY(0);
   transition: all .4s ease-out;
   border: .5em solid #e89c0c;
