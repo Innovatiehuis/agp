@@ -926,7 +926,7 @@ section {
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
-.trends #trends-flters li:hover, .trends #trends-flters li.filtert-active {
+.trends #trends-flters li:hover, .trends #trends-flters li.filter-active {
   color: #1bac91;
 }
 .trends #trends-flters li:last-child {
